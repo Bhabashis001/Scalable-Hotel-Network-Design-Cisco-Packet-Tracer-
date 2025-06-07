@@ -24,19 +24,26 @@ independently from finance but shares occasional data with sales for promotions.
 communicate with the restaurant but not with finance.
 
 The network must be designed to:
+
 • Ensure secure inter-departmental communication using VLANs, ACLs, and Inter-
 VLAN Routing.
+
 • Enable centralized control for efficient management and troubleshooting.
+
 • Provide redundancy to maintain operations during device failures.
+
 • Ensure scalability for future expansion, including adding new departments or
 branches.
 
 Additional Features:
 1. Centralized Server:
+   
 o Deploy a centralized server for storing shared files like promotional materials,
 daily sales reports, and customer feedback forms.
+
 o Host the server in a separate VLAN (e.g., VLAN 50, 192.168.50.0/24) with
 access controlled via ACLs.
+
 2. Guest Wi-Fi Network:
 o Configure a guest VLAN (VLAN 60) to provide internet-only access for hotel
 guests.
