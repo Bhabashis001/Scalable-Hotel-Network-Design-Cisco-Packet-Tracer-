@@ -4,19 +4,25 @@ Create a secure, scalable, and functional network for a hotel using Cisco Packet
 network should ensure departmental isolation, controlled data sharing, and efficient resource
 management while being capable of accommodating future growth. This network will
 simulate real-life hotel operations and address key IT challenges.
+
 Scenario:
 A large hotel with multiple departments—Reception, Finance, Restaurant, and Sales—
 requires a robust network design to handle its daily operations securely. Each department has
 distinct requirements and handles critical functions as follows:
-1. 2. 3. 4. Reception: Manages guest check-ins, reservations, and communication with the
+
+1.Reception: Manages guest check-ins, reservations, and communication with the
 finance department for billing. Requires direct communication with the finance
 department while being isolated from others.
-Finance: Handles sensitive financial data such as payroll, invoices, and transactions.
+
+2.Finance: Handles sensitive financial data such as payroll, invoices, and transactions.
 No department except reception should have access to this data.
-Restaurant: Manages food orders, inventory, and guest room service. Operates
+
+3.Restaurant: Manages food orders, inventory, and guest room service. Operates
 independently from finance but shares occasional data with sales for promotions.
-Sales: Focuses on marketing campaigns, online bookings, and promotions. Can
+
+4.Sales: Focuses on marketing campaigns, online bookings, and promotions. Can
 communicate with the restaurant but not with finance.
+
 The network must be designed to:
 • Ensure secure inter-departmental communication using VLANs, ACLs, and Inter-
 VLAN Routing.
@@ -24,6 +30,7 @@ VLAN Routing.
 • Provide redundancy to maintain operations during device failures.
 • Ensure scalability for future expansion, including adding new departments or
 branches.
+
 Additional Features:
 1. Centralized Server:
 o Deploy a centralized server for storing shared files like promotional materials,
@@ -34,6 +41,7 @@ access controlled via ACLs.
 o Configure a guest VLAN (VLAN 60) to provide internet-only access for hotel
 guests.
 o Isolate this VLAN from all internal networks.
+
 Deliverables:
 1. Network Topology Diagram:
 o Include all devices, VLANs, IP addresses, and interconnections.
